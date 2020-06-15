@@ -16,6 +16,12 @@ double kurang(double a, double b) {
 double kali(double a, double b) {
 	return a * b;
 }
+double bagi(double a, double b) {
+	return a / b;
+}
+double mod(double a, double b) {
+	return a % b;
+}
 
 int main() {
 	int pilihan;
@@ -25,6 +31,10 @@ int main() {
 	printf("----------------------\n");
 	printf("1. Tambah\n");
 	printf("2. Kurang\n");
+	printf("3. kali\n");
+	printf("4. Bagi\n");
+	printf("5. Mod\n");
+
     printf("3. Kali\n");
 
 	printf("Masukkan pilihan Anda : ");
@@ -42,13 +52,21 @@ int main() {
 			printf("%.1f\n", tambah(angka1, angka2));
 		break;
 		case 2:
-            printf("Hasil pengurangan : ");
-            printf("%.1f\n", kurang(angka1, angka2));
-        break;
-        case 3:
-            printf("Hasil perkalian : ");
-            printf("%.1f\n", kali(angka1, angka2));
-        break;
+            		printf("Hasil pengurangan : ");
+            		printf("%.1f\n", kurang(angka1, angka2));
+      		break;
+        	case 3:
+            		printf("Hasil perkalian : ");
+           	 	printf("%.1f\n", kali(angka1, angka2));
+        	break;
+		case 4:
+			printf("Hasil pembagian : ");
+           	 	printf("%.1f\n", bagi(angka1, angka2));
+		break;
+		case 5:
+			printf("Hasil mod : ");
+           	 	printf("%.1f\n", mod(angka1, angka2));
+		break;
 	}
 	return 0;
 }
